@@ -2,9 +2,9 @@ import { getData } from './pokemon-service';
 import { createList } from './create-list';
 
 let filterTerm = '';
-const listElement = document.getElementById('pokeList');
+const listElement = document.querySelector('.poke-list');
 const inputElement = document.getElementById('pokeFilter');
-const pokeballElement = document.getElementById('pokeballBack');
+const pokeballElement = document.querySelector('.pokeball-back');
 
 inputElement.addEventListener('keyup', function () {
   filterTerm = this.value;

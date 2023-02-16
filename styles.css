@@ -1,23 +1,28 @@
+body{
+  margin: 0
+}
+
 .pokeball-back {
   position: fixed;
   top: 50%;
   left: -50%;
   transform: translateY(-50%);
-  z-index: -100;
+  z-index: -1;
   width: 100%;
-  opacity: 0.5; }
+  opacity: 0.7; 
+}
 
 #pokeFilter {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
-  padding: 10px;
+  padding: 15px 30px;
   border: 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #666;
-  color: #fff; }
+  background-color: #ccc;
+  color: #777; 
+}
 
 #pokeFilter:focus{
   outline: none;
@@ -25,30 +30,30 @@
 
 .poke-list {
   float: right;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 70%;
   text-transform: capitalize;
-  opacity: 0.95; }
+  opacity: 0.9; 
+}
 
 .poke-list-item {
   display: flex;
   align-items: center;
   position: relative;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   cursor: pointer;
-  list-style: none;
   background-color: #333;
-  color: white; }
-a{
-  color: white;
-  text-decoration: none;
+  color: white; 
+  transition: background-color 0.5s
 }
+
 .poke-list-item:hover {
-  background-color: #555; }
-.poke-list-item img{
+  background-color: #555; 
+}
+
+.poke-list-item img {
   margin-right: 10px;
-  vertical-align: middle;
 }

@@ -18,7 +18,7 @@ export const getData = callback => {
     const pokemonList = results
       .map(pokemon => {
         const number = getNumberFromURL(pokemon.url);
-        pokemon.number = ('000' + number).slice(-3);
+        pokemon.number = String(number).padStart(3, '0');
         return pokemon;
       })
       .sort((pokemonA, pokemonB) => {
